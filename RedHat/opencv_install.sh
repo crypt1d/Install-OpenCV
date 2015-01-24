@@ -21,7 +21,7 @@ cd $dldir
 echo "Installing Dependencies"
 sudo yum -y install http://dl.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm
 sudo yum -y groupinstall "Development Tools"
-sudo yum -y install wget unzip opencv opencv-devel gtk2-devel cmake mesa-libGLU mesa-libGLU-devel
+sudo yum -y install wget unzip opencv opencv-devel gtk2-devel cmake mesa-libGLU mesa-libGLU-devel qt5-qtbase qt5-qtbase-devel gcc-c++
 if [ ! -f $downloadfile ]; then
 	echo "Downloading OpenCV" $version
 	wget -O $downloadfile http://sourceforge.net/projects/opencvlibrary/files/opencv-unix/$version/$downloadfile/download
